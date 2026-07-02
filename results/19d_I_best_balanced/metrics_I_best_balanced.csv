@@ -1,0 +1,3 @@
+view,method,model,split,threshold,max_depth,min_samples_split,min_samples_leaf,n_estimators,max_samples,pr_auc,roc_auc,accuracy,precision,recall,f1,positive_predictions,tn,fp,fn,tp,fpr,fnr,tpr,tnr,total_rows,positive_rate_predicted
+I,baseline,Bagging_DT_I_best_balanced,valid,0.25,2,10,4,50,0.8,0.03498894027749849,0.5,0.9650110597225016,0.0,0.0,0.0,0,91181,0,3306,0,0.0,1.0,0.0,1.0,94487,0.0
+I,baseline,Bagging_DT_I_best_balanced,test,0.25,2,10,4,50,0.8,0.0349933958749619,0.5,0.9650066041250381,0.0,0.0,0.0,0,113975,0,4133,0,0.0,1.0,0.0,1.0,118108,0.0

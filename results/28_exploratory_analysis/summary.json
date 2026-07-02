@@ -1,0 +1,110 @@
+{
+  "dataset_files_used": {
+    "train_transaction": "c:\\users\\farhanali\\desktop\\fyp_msc\\project\\data\\raw\\train_transaction.csv",
+    "train_identity": "c:\\users\\farhanali\\desktop\\fyp_msc\\project\\data\\raw\\train_identity.csv",
+    "train_merged": "c:\\users\\farhanali\\desktop\\fyp_msc\\project\\data\\interim\\train_merged.csv"
+  },
+  "dataset_shapes": {
+    "train_transaction": [
+      590540,
+      394
+    ],
+    "train_identity": [
+      144233,
+      41
+    ],
+    "train_merged": [
+      590540,
+      434
+    ]
+  },
+  "class_summary": {
+    "non_fraud_count": 569877,
+    "fraud_count": 20663,
+    "fraud_rate": 0.03499000914417313
+  },
+  "identity_summary": {
+    "rows_without_identity_info": 446307,
+    "rows_with_identity_info": 144233,
+    "identity_coverage_rate": 0.2442391709283029
+  },
+  "amount_summary": {
+    "transaction_amount_mean": 135.02717637247264,
+    "transaction_amount_median": 68.769,
+    "transaction_amount_std": 239.16231951887912
+  },
+  "missingness_by_group_top5": [
+    {
+      "feature_group": "Identity",
+      "missing_pct": 84.82327058374761
+    },
+    {
+      "feature_group": "Distance",
+      "missing_pct": 76.64036305754055
+    },
+    {
+      "feature_group": "Delay / Time-related",
+      "missing_pct": 60.490010140270414
+    },
+    {
+      "feature_group": "Matching / Behaviour",
+      "missing_pct": 49.923328177976465
+    },
+    {
+      "feature_group": "Email",
+      "missing_pct": 46.37323466657635
+    }
+  ],
+  "top_missing_features_top10": [
+    {
+      "feature": "id_24",
+      "missing_pct": 99.19615944728554,
+      "dtype": "float64"
+    },
+    {
+      "feature": "id_25",
+      "missing_pct": 99.13096487960172,
+      "dtype": "float64"
+    },
+    {
+      "feature": "id_07",
+      "missing_pct": 99.12707013919464,
+      "dtype": "float64"
+    },
+    {
+      "feature": "id_08",
+      "missing_pct": 99.12707013919464,
+      "dtype": "float64"
+    },
+    {
+      "feature": "id_21",
+      "missing_pct": 99.12639279303687,
+      "dtype": "float64"
+    },
+    {
+      "feature": "id_26",
+      "missing_pct": 99.12571544687913,
+      "dtype": "float64"
+    },
+    {
+      "feature": "id_27",
+      "missing_pct": 99.1246994276425,
+      "dtype": "str"
+    },
+    {
+      "feature": "id_23",
+      "missing_pct": 99.1246994276425,
+      "dtype": "str"
+    },
+    {
+      "feature": "id_22",
+      "missing_pct": 99.1246994276425,
+      "dtype": "float64"
+    },
+    {
+      "feature": "dist2",
+      "missing_pct": 93.62837403054831,
+      "dtype": "float64"
+    }
+  ]
+}

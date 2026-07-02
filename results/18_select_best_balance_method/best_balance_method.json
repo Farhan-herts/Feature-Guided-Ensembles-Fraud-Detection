@@ -1,0 +1,27 @@
+{
+  "selected_from_split": "valid",
+  "selection_priority": [
+    "mean_pr_auc_high",
+    "mean_recall_high",
+    "mean_f1_high",
+    "mean_fpr_low",
+    "mean_precision_high",
+    "mean_roc_auc_high",
+    "mean_accuracy_high"
+  ],
+  "best_method": "baseline",
+  "details": {
+    "benchmark_views_count": 3,
+    "mean_pr_auc": 0.20920806203260092,
+    "mean_recall": 0.12290784432345225,
+    "mean_f1": 0.18989808185491683,
+    "mean_fpr": 0.006218400763316833,
+    "mean_precision": 0.4256129391803185,
+    "mean_roc_auc": 0.7760730133484722,
+    "mean_accuracy": 0.963310649436783,
+    "sum_fp": 1701.0,
+    "sum_fn": 8699.0,
+    "sum_tp": 1219.0,
+    "sum_tn": 271842.0
+  }
+}

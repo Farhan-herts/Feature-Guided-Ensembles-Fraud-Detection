@@ -1,0 +1,51 @@
+{
+  "selected_best_method_from_step18": "baseline",
+  "valid_metrics": {
+    "pr_auc": 0.062399430606013565,
+    "roc_auc": 0.6068442687799799,
+    "accuracy": 0.9648734746578894,
+    "precision": 0.32432432432432434,
+    "recall": 0.003629764065335753,
+    "f1": 0.0071791803769069695,
+    "fp": 25,
+    "fn": 3294,
+    "tp": 12,
+    "tn": 91156,
+    "fpr": 0.000274179927835843,
+    "fnr": 0.9963702359346642
+  },
+  "test_metrics": {
+    "pr_auc": 0.06586460114238071,
+    "roc_auc": 0.6132483676263897,
+    "accuracy": 0.96501507095201,
+    "precision": 0.5128205128205128,
+    "recall": 0.004839099927413501,
+    "f1": 0.009587727708533078,
+    "fp": 19,
+    "fn": 4113,
+    "tp": 20,
+    "tn": 113956,
+    "fpr": 0.00016670322439131389,
+    "fnr": 0.9951609000725865
+  },
+  "train_class_distribution": [
+    {
+      "method": "original_train",
+      "label": "original_train",
+      "count_class_0": 364721,
+      "count_class_1": 13224,
+      "total_rows": 377945,
+      "minority_over_majority": 0.036257851892268336,
+      "fraud_rate": 0.0349892180079112
+    },
+    {
+      "method": "baseline",
+      "label": "baseline_resampled_train",
+      "count_class_0": 364721,
+      "count_class_1": 13224,
+      "total_rows": 377945,
+      "minority_over_majority": 0.036257851892268336,
+      "fraud_rate": 0.0349892180079112
+    }
+  ]
+}

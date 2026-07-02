@@ -1,0 +1,454 @@
+Python 3.11.14 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 18:30:03) [MSC v.1929 64 bit (AMD64)]
+Type "copyright", "credits" or "license" for more information.
+
+IPython 9.7.0 -- An enhanced Interactive Python. Type '?' for help.
+
+%runfile C:/Users/FarhanAli/Desktop/FYP_MSc/project/src/09c_individual_T_bagging.py --wdir
+=== Step 09c: Tuned Individual Bagging on Temporal View [T] ===
+
+[1/6] Loading data...
+X_train_T: (377945, 3)
+X_valid_T: (94487, 3)
+X_test_T : (118108, 3)
+y_train  : (377945,)
+y_valid  : (94487,)
+y_test   : (118108,)
+
+[2/6] Running hyperparameter tuning...
+
+[TUNE 1] {'view_name': 'T', 'model_name': 'Bagging_DT_T', 'max_depth': 2, 'min_samples_split': 10, 'min_samples_leaf': 4, 'n_estimators': 50, 'max_samples': 0.8, 'bootstrap': True, 'random_state': 42}
+    VALID PR-AUC=0.044385 | ROC-AUC=0.564782 | Accuracy@0.5=0.965011 | Precision@0.5=0.000000 | Recall@0.5=0.000000
+
+[TUNE 2] {'view_name': 'T', 'model_name': 'Bagging_DT_T', 'max_depth': 2, 'min_samples_split': 10, 'min_samples_leaf': 4, 'n_estimators': 100, 'max_samples': 0.8, 'bootstrap': True, 'random_state': 42}
+    VALID PR-AUC=0.045242 | ROC-AUC=0.564908 | Accuracy@0.5=0.965011 | Precision@0.5=0.000000 | Recall@0.5=0.000000
+
+[TUNE 3] {'view_name': 'T', 'model_name': 'Bagging_DT_T', 'max_depth': 2, 'min_samples_split': 10, 'min_samples_leaf': 4, 'n_estimators': 150, 'max_samples': 1.0, 'bootstrap': True, 'random_state': 42}
+    VALID PR-AUC=0.045242 | ROC-AUC=0.564881 | Accuracy@0.5=0.965011 | Precision@0.5=0.000000 | Recall@0.5=0.000000
+
+[TUNE 4] {'view_name': 'T', 'model_name': 'Bagging_DT_T', 'max_depth': 3, 'min_samples_split': 10, 'min_samples_leaf': 4, 'n_estimators': 50, 'max_samples': 0.8, 'bootstrap': True, 'random_state': 42}
+    VALID PR-AUC=0.046873 | ROC-AUC=0.576798 | Accuracy@0.5=0.965011 | Precision@0.5=0.000000 | Recall@0.5=0.000000
+
+[TUNE 5] {'view_name': 'T', 'model_name': 'Bagging_DT_T', 'max_depth': 3, 'min_samples_split': 10, 'min_samples_leaf': 4, 'n_estimators': 100, 'max_samples': 0.8, 'bootstrap': True, 'random_state': 42}
+    VALID PR-AUC=0.048960 | ROC-AUC=0.578600 | Accuracy@0.5=0.965011 | Precision@0.5=0.000000 | Recall@0.5=0.000000
+
+[TUNE 6] {'view_name': 'T', 'model_name': 'Bagging_DT_T', 'max_depth': 3, 'min_samples_split': 10, 'min_samples_leaf': 4, 'n_estimators': 150, 'max_samples': 1.0, 'bootstrap': True, 'random_state': 42}
+    VALID PR-AUC=0.047483 | ROC-AUC=0.577512 | Accuracy@0.5=0.965011 | Precision@0.5=0.000000 | Recall@0.5=0.000000
+
+[TUNE 7] {'view_name': 'T', 'model_name': 'Bagging_DT_T', 'max_depth': 4, 'min_samples_split': 10, 'min_samples_leaf': 4, 'n_estimators': 50, 'max_samples': 0.8, 'bootstrap': True, 'random_state': 42}
+    VALID PR-AUC=0.050702 | ROC-AUC=0.583294 | Accuracy@0.5=0.965011 | Precision@0.5=0.000000 | Recall@0.5=0.000000
+
+[TUNE 8] {'view_name': 'T', 'model_name': 'Bagging_DT_T', 'max_depth': 4, 'min_samples_split': 10, 'min_samples_leaf': 4, 'n_estimators': 100, 'max_samples': 0.8, 'bootstrap': True, 'random_state': 42}
+    VALID PR-AUC=0.051720 | ROC-AUC=0.584306 | Accuracy@0.5=0.965011 | Precision@0.5=0.000000 | Recall@0.5=0.000000
+
+[TUNE 9] {'view_name': 'T', 'model_name': 'Bagging_DT_T', 'max_depth': 4, 'min_samples_split': 10, 'min_samples_leaf': 4, 'n_estimators': 150, 'max_samples': 1.0, 'bootstrap': True, 'random_state': 42}
+    VALID PR-AUC=0.051158 | ROC-AUC=0.584180 | Accuracy@0.5=0.965011 | Precision@0.5=0.000000 | Recall@0.5=0.000000
+
+[TUNE 10] {'view_name': 'T', 'model_name': 'Bagging_DT_T', 'max_depth': 6, 'min_samples_split': 5, 'min_samples_leaf': 2, 'n_estimators': 50, 'max_samples': 0.8, 'bootstrap': True, 'random_state': 42}
+    VALID PR-AUC=0.057074 | ROC-AUC=0.595316 | Accuracy@0.5=0.965011 | Precision@0.5=0.000000 | Recall@0.5=0.000000
+
+[TUNE 11] {'view_name': 'T', 'model_name': 'Bagging_DT_T', 'max_depth': 6, 'min_samples_split': 5, 'min_samples_leaf': 2, 'n_estimators': 100, 'max_samples': 0.8, 'bootstrap': True, 'random_state': 42}
+    VALID PR-AUC=0.057094 | ROC-AUC=0.595840 | Accuracy@0.5=0.965011 | Precision@0.5=0.000000 | Recall@0.5=0.000000
+
+[TUNE 12] {'view_name': 'T', 'model_name': 'Bagging_DT_T', 'max_depth': 6, 'min_samples_split': 5, 'min_samples_leaf': 2, 'n_estimators': 150, 'max_samples': 1.0, 'bootstrap': True, 'random_state': 42}
+    VALID PR-AUC=0.057531 | ROC-AUC=0.596134 | Accuracy@0.5=0.965011 | Precision@0.5=0.000000 | Recall@0.5=0.000000
+
+[TUNE 13] {'view_name': 'T', 'model_name': 'Bagging_DT_T', 'max_depth': 8, 'min_samples_split': 10, 'min_samples_leaf': 4, 'n_estimators': 50, 'max_samples': 0.8, 'bootstrap': True, 'random_state': 42}
+    VALID PR-AUC=0.062247 | ROC-AUC=0.606213 | Accuracy@0.5=0.965011 | Precision@0.5=0.000000 | Recall@0.5=0.000000
+
+[TUNE 14] {'view_name': 'T', 'model_name': 'Bagging_DT_T', 'max_depth': 8, 'min_samples_split': 10, 'min_samples_leaf': 4, 'n_estimators': 100, 'max_samples': 0.8, 'bootstrap': True, 'random_state': 42}
+    VALID PR-AUC=0.062260 | ROC-AUC=0.607189 | Accuracy@0.5=0.965011 | Precision@0.5=0.000000 | Recall@0.5=0.000000
+
+[TUNE 15] {'view_name': 'T', 'model_name': 'Bagging_DT_T', 'max_depth': 8, 'min_samples_split': 10, 'min_samples_leaf': 4, 'n_estimators': 150, 'max_samples': 1.0, 'bootstrap': True, 'random_state': 42}
+    VALID PR-AUC=0.062399 | ROC-AUC=0.606844 | Accuracy@0.5=0.965011 | Precision@0.5=0.000000 | Recall@0.5=0.000000
+
+[OK] Tuning results saved to: c:\users\farhanali\desktop\fyp_msc\project\results\09c_individual_T_tuned\tuning_results_T.csv
+
+Best configuration selected:
+{'view_name': 'T', 'model_name': 'Bagging_DT_T', 'max_depth': 8, 'min_samples_split': 10, 'min_samples_leaf': 4, 'n_estimators': 150, 'max_samples': 1.0, 'bootstrap': True, 'random_state': 42}
+[OK] Best params saved to: c:\users\farhanali\desktop\fyp_msc\project\results\09c_individual_T_tuned\best_params_T.json
+
+[3/6] Training final model with best configuration...
+
+[4/6] Generating probabilities...
+
+[5/6] Evaluating final model...
+[OK] Final metrics saved to: c:\users\farhanali\desktop\fyp_msc\project\results\09c_individual_T_tuned\metrics_T_bagging_tuned.csv
+
+[6/6] Saving predictions, plots, and run config...
+[OK] VALID predictions saved to: c:\users\farhanali\desktop\fyp_msc\project\results\09c_individual_T_tuned\valid_predictions_T.csv
+[OK] TEST predictions saved to: c:\users\farhanali\desktop\fyp_msc\project\results\09c_individual_T_tuned\test_predictions_T.csv
+[OK] VALID PR plot saved to: c:\users\farhanali\desktop\fyp_msc\project\results\09c_individual_T_tuned\pr_curve_valid_T.png
+[OK] TEST PR plot saved to: c:\users\farhanali\desktop\fyp_msc\project\results\09c_individual_T_tuned\pr_curve_test_T.png
+[OK] Metrics bar chart saved to: c:\users\farhanali\desktop\fyp_msc\project\results\09c_individual_T_tuned\metrics_bar_chart_T.png
+[OK] VALID confusion matrix saved to: c:\users\farhanali\desktop\fyp_msc\project\results\09c_individual_T_tuned\confusion_matrix_valid_T.png
+[OK] TEST confusion matrix saved to: c:\users\farhanali\desktop\fyp_msc\project\results\09c_individual_T_tuned\confusion_matrix_test_T.png
+[OK] Run config saved to: c:\users\farhanali\desktop\fyp_msc\project\results\09c_individual_T_tuned\run_config_T.json
+
+Final metrics:
+view        model split  threshold  max_depth  min_samples_split  min_samples_leaf  n_estimators  max_samples   pr_auc  roc_auc  accuracy  precision  recall  f1  positive_predictions  total_rows  positive_rate_predicted
+   T Bagging_DT_T valid        0.5          8                 10                 4           150          1.0 0.062399 0.606844  0.965011        0.0     0.0 0.0                     0       94487                      0.0
+   T Bagging_DT_T  test        0.5          8                 10                 4           150          1.0 0.065865 0.613248  0.965007        0.0     0.0 0.0                     0      118108                      0.0
+
+%runfile C:/Users/FarhanAli/Desktop/FYP_MSc/project/src/09d_individual_I_bagging.py --wdir
+=== Step 09d: Tuned Individual Bagging on Identity View [I] ===
+
+[1/6] Loading data...
+X_train_I: (377945, 5)
+X_valid_I: (94487, 5)
+X_test_I : (118108, 5)
+y_train  : (377945,)
+y_valid  : (94487,)
+y_test   : (118108,)
+
+[2/6] Running hyperparameter tuning...
+
+[TUNE 1] {'view_name': 'I', 'model_name': 'Bagging_DT_I', 'max_depth': 2, 'min_samples_split': 10, 'min_samples_leaf': 4, 'n_estimators': 50, 'max_samples': 0.8, 'bootstrap': True, 'random_state': 42}
+    VALID PR-AUC=0.034989 | ROC-AUC=0.500000 | Accuracy@0.5=0.965011 | Precision@0.5=0.000000 | Recall@0.5=0.000000
+
+[TUNE 2] {'view_name': 'I', 'model_name': 'Bagging_DT_I', 'max_depth': 2, 'min_samples_split': 10, 'min_samples_leaf': 4, 'n_estimators': 100, 'max_samples': 0.8, 'bootstrap': True, 'random_state': 42}
+    VALID PR-AUC=0.034989 | ROC-AUC=0.500000 | Accuracy@0.5=0.965011 | Precision@0.5=0.000000 | Recall@0.5=0.000000
+
+[TUNE 3] {'view_name': 'I', 'model_name': 'Bagging_DT_I', 'max_depth': 2, 'min_samples_split': 10, 'min_samples_leaf': 4, 'n_estimators': 100, 'max_samples': 1.0, 'bootstrap': True, 'random_state': 42}
+    VALID PR-AUC=0.034989 | ROC-AUC=0.500000 | Accuracy@0.5=0.965011 | Precision@0.5=0.000000 | Recall@0.5=0.000000
+
+[TUNE 4] {'view_name': 'I', 'model_name': 'Bagging_DT_I', 'max_depth': 4, 'min_samples_split': 10, 'min_samples_leaf': 4, 'n_estimators': 50, 'max_samples': 0.8, 'bootstrap': True, 'random_state': 42}
+    VALID PR-AUC=0.034989 | ROC-AUC=0.500000 | Accuracy@0.5=0.965011 | Precision@0.5=0.000000 | Recall@0.5=0.000000
+
+[TUNE 5] {'view_name': 'I', 'model_name': 'Bagging_DT_I', 'max_depth': 4, 'min_samples_split': 10, 'min_samples_leaf': 4, 'n_estimators': 100, 'max_samples': 0.8, 'bootstrap': True, 'random_state': 42}
+    VALID PR-AUC=0.034989 | ROC-AUC=0.500000 | Accuracy@0.5=0.965011 | Precision@0.5=0.000000 | Recall@0.5=0.000000
+
+[TUNE 6] {'view_name': 'I', 'model_name': 'Bagging_DT_I', 'max_depth': 4, 'min_samples_split': 10, 'min_samples_leaf': 4, 'n_estimators': 100, 'max_samples': 1.0, 'bootstrap': True, 'random_state': 42}
+    VALID PR-AUC=0.034989 | ROC-AUC=0.500000 | Accuracy@0.5=0.965011 | Precision@0.5=0.000000 | Recall@0.5=0.000000
+
+[TUNE 7] {'view_name': 'I', 'model_name': 'Bagging_DT_I', 'max_depth': 6, 'min_samples_split': 5, 'min_samples_leaf': 2, 'n_estimators': 50, 'max_samples': 0.8, 'bootstrap': True, 'random_state': 42}
+    VALID PR-AUC=0.034989 | ROC-AUC=0.500000 | Accuracy@0.5=0.965011 | Precision@0.5=0.000000 | Recall@0.5=0.000000
+
+[TUNE 8] {'view_name': 'I', 'model_name': 'Bagging_DT_I', 'max_depth': 6, 'min_samples_split': 5, 'min_samples_leaf': 2, 'n_estimators': 100, 'max_samples': 0.8, 'bootstrap': True, 'random_state': 42}
+    VALID PR-AUC=0.034989 | ROC-AUC=0.500000 | Accuracy@0.5=0.965011 | Precision@0.5=0.000000 | Recall@0.5=0.000000
+
+[TUNE 9] {'view_name': 'I', 'model_name': 'Bagging_DT_I', 'max_depth': 6, 'min_samples_split': 5, 'min_samples_leaf': 2, 'n_estimators': 100, 'max_samples': 1.0, 'bootstrap': True, 'random_state': 42}
+    VALID PR-AUC=0.034989 | ROC-AUC=0.500000 | Accuracy@0.5=0.965011 | Precision@0.5=0.000000 | Recall@0.5=0.000000
+
+[TUNE 10] {'view_name': 'I', 'model_name': 'Bagging_DT_I', 'max_depth': 8, 'min_samples_split': 10, 'min_samples_leaf': 4, 'n_estimators': 50, 'max_samples': 0.8, 'bootstrap': True, 'random_state': 42}
+    VALID PR-AUC=0.034989 | ROC-AUC=0.500000 | Accuracy@0.5=0.965011 | Precision@0.5=0.000000 | Recall@0.5=0.000000
+
+[TUNE 11] {'view_name': 'I', 'model_name': 'Bagging_DT_I', 'max_depth': 8, 'min_samples_split': 10, 'min_samples_leaf': 4, 'n_estimators': 100, 'max_samples': 0.8, 'bootstrap': True, 'random_state': 42}
+    VALID PR-AUC=0.034989 | ROC-AUC=0.500000 | Accuracy@0.5=0.965011 | Precision@0.5=0.000000 | Recall@0.5=0.000000
+
+[TUNE 12] {'view_name': 'I', 'model_name': 'Bagging_DT_I', 'max_depth': 8, 'min_samples_split': 10, 'min_samples_leaf': 4, 'n_estimators': 100, 'max_samples': 1.0, 'bootstrap': True, 'random_state': 42}
+    VALID PR-AUC=0.034989 | ROC-AUC=0.500000 | Accuracy@0.5=0.965011 | Precision@0.5=0.000000 | Recall@0.5=0.000000
+
+[TUNE 13] {'view_name': 'I', 'model_name': 'Bagging_DT_I', 'max_depth': 10, 'min_samples_split': 20, 'min_samples_leaf': 5, 'n_estimators': 50, 'max_samples': 0.8, 'bootstrap': True, 'random_state': 42}
+    VALID PR-AUC=0.034989 | ROC-AUC=0.500000 | Accuracy@0.5=0.965011 | Precision@0.5=0.000000 | Recall@0.5=0.000000
+
+[TUNE 14] {'view_name': 'I', 'model_name': 'Bagging_DT_I', 'max_depth': 10, 'min_samples_split': 20, 'min_samples_leaf': 5, 'n_estimators': 100, 'max_samples': 0.8, 'bootstrap': True, 'random_state': 42}
+    VALID PR-AUC=0.034989 | ROC-AUC=0.500000 | Accuracy@0.5=0.965011 | Precision@0.5=0.000000 | Recall@0.5=0.000000
+
+[TUNE 15] {'view_name': 'I', 'model_name': 'Bagging_DT_I', 'max_depth': 10, 'min_samples_split': 20, 'min_samples_leaf': 5, 'n_estimators': 100, 'max_samples': 1.0, 'bootstrap': True, 'random_state': 42}
+    VALID PR-AUC=0.034989 | ROC-AUC=0.500000 | Accuracy@0.5=0.965011 | Precision@0.5=0.000000 | Recall@0.5=0.000000
+
+[OK] Tuning results saved to: c:\users\farhanali\desktop\fyp_msc\project\results\09d_individual_I_tuned\tuning_results_I.csv
+
+Best configuration selected:
+{'view_name': 'I', 'model_name': 'Bagging_DT_I', 'max_depth': 2, 'min_samples_split': 10, 'min_samples_leaf': 4, 'n_estimators': 50, 'max_samples': 0.8, 'bootstrap': True, 'random_state': 42}
+[OK] Best params saved to: c:\users\farhanali\desktop\fyp_msc\project\results\09d_individual_I_tuned\best_params_I.json
+
+[3/6] Training final model with best configuration...
+
+[4/6] Generating probabilities...
+
+[5/6] Evaluating final model...
+[OK] Final metrics saved to: c:\users\farhanali\desktop\fyp_msc\project\results\09d_individual_I_tuned\metrics_I_bagging_tuned.csv
+
+[6/6] Saving predictions, plots, and run config...
+[OK] VALID predictions saved to: c:\users\farhanali\desktop\fyp_msc\project\results\09d_individual_I_tuned\valid_predictions_I.csv
+[OK] TEST predictions saved to: c:\users\farhanali\desktop\fyp_msc\project\results\09d_individual_I_tuned\test_predictions_I.csv
+[OK] VALID PR plot saved to: c:\users\farhanali\desktop\fyp_msc\project\results\09d_individual_I_tuned\pr_curve_valid_I.png
+[OK] TEST PR plot saved to: c:\users\farhanali\desktop\fyp_msc\project\results\09d_individual_I_tuned\pr_curve_test_I.png
+[OK] Metrics bar chart saved to: c:\users\farhanali\desktop\fyp_msc\project\results\09d_individual_I_tuned\metrics_bar_chart_I.png
+[OK] VALID confusion matrix saved to: c:\users\farhanali\desktop\fyp_msc\project\results\09d_individual_I_tuned\confusion_matrix_valid_I.png
+[OK] TEST confusion matrix saved to: c:\users\farhanali\desktop\fyp_msc\project\results\09d_individual_I_tuned\confusion_matrix_test_I.png
+[OK] Run config saved to: c:\users\farhanali\desktop\fyp_msc\project\results\09d_individual_I_tuned\run_config_I.json
+
+Final metrics:
+view        model split  threshold  max_depth  min_samples_split  min_samples_leaf  n_estimators  max_samples   pr_auc  roc_auc  accuracy  precision  recall  f1  positive_predictions  total_rows  positive_rate_predicted
+   I Bagging_DT_I valid        0.5          2                 10                 4            50          0.8 0.034989      0.5  0.965011        0.0     0.0 0.0                     0       94487                      0.0
+   I Bagging_DT_I  test        0.5          2                 10                 4            50          0.8 0.034993      0.5  0.965007        0.0     0.0 0.0                     0      118108                      0.0
+
+%runfile C:/Users/FarhanAli/Desktop/FYP_MSc/project/src/10_ab_multiview_bagging.py --wdir
+=== Step 10: A+B Multiview Bagging (Soft Voting) ===
+
+[1/7] Loading A-view and B-view data...
+X_train_A: (377945, 28)
+X_valid_A: (94487, 28)
+X_test_A : (118108, 28)
+X_train_B: (377945, 33)
+X_valid_B: (94487, 33)
+X_test_B : (118108, 33)
+y_train  : (377945,)
+y_valid  : (94487,)
+y_test   : (118108,)
+
+[2/7] Loading tuned best parameters from individual A and B experiments...
+Best A params:
+{'view_name': 'A', 'model_name': 'Bagging_DT_A', 'max_depth': 10, 'min_samples_split': 20, 'min_samples_leaf': 5, 'n_estimators': 100, 'max_samples': 1.0, 'bootstrap': True, 'random_state': 42}
+Best B params:
+{'view_name': 'B', 'model_name': 'Bagging_DT_B', 'max_depth': 10, 'min_samples_split': 20, 'min_samples_leaf': 5, 'n_estimators': 100, 'max_samples': 1.0, 'bootstrap': True, 'random_state': 42}
+
+[3/7] Training tuned A-view model...
+
+[4/7] Training tuned B-view model...
+
+[5/7] Generating component probabilities and soft-voting ensemble...
+
+[6/7] Evaluating A+B multiview ensemble...
+[OK] Final metrics saved to: c:\users\farhanali\desktop\fyp_msc\project\results\10_ab_multiview\metrics_AB_multiview.csv
+[OK] Component summary saved to: c:\users\farhanali\desktop\fyp_msc\project\results\10_ab_multiview\component_summary_AB.json
+
+[7/7] Saving predictions, plots, and run config...
+[OK] VALID predictions saved to: c:\users\farhanali\desktop\fyp_msc\project\results\10_ab_multiview\valid_predictions_AB.csv
+[OK] TEST predictions saved to: c:\users\farhanali\desktop\fyp_msc\project\results\10_ab_multiview\test_predictions_AB.csv
+[OK] VALID PR plot saved to: c:\users\farhanali\desktop\fyp_msc\project\results\10_ab_multiview\pr_curve_valid_AB.png
+[OK] TEST PR plot saved to: c:\users\farhanali\desktop\fyp_msc\project\results\10_ab_multiview\pr_curve_test_AB.png
+[OK] Metrics bar chart saved to: c:\users\farhanali\desktop\fyp_msc\project\results\10_ab_multiview\metrics_bar_chart_AB.png
+[OK] VALID confusion matrix saved to: c:\users\farhanali\desktop\fyp_msc\project\results\10_ab_multiview\confusion_matrix_valid_AB.png
+[OK] TEST confusion matrix saved to: c:\users\farhanali\desktop\fyp_msc\project\results\10_ab_multiview\confusion_matrix_test_AB.png
+[OK] Run config saved to: c:\users\farhanali\desktop\fyp_msc\project\results\10_ab_multiview\run_config_AB.json
+
+Component summary:
+{
+  "valid_summary": {
+    "A_valid_pr_auc": 0.1882207081316351,
+    "B_valid_pr_auc": 0.2121563410529854,
+    "AB_valid_pr_auc": 0.2272471369131823,
+    "A_valid_roc_auc": 0.7599995260817364,
+    "B_valid_roc_auc": 0.7785947106674596,
+    "AB_valid_roc_auc": 0.7896248032962206
+  },
+  "test_summary": {
+    "A_test_pr_auc": 0.18875116593252414,
+    "B_test_pr_auc": 0.21086320448617354,
+    "AB_test_pr_auc": 0.2272161830581054,
+    "A_test_roc_auc": 0.762129296313246,
+    "B_test_roc_auc": 0.7763486279071286,
+    "AB_test_roc_auc": 0.7897043876752721
+  }
+}
+
+Final metrics:
+view                    model split  threshold      combination_type component_views   pr_auc  roc_auc  accuracy  precision   recall       f1  positive_predictions  total_rows  positive_rate_predicted  A_max_depth  A_min_samples_split  A_min_samples_leaf  A_n_estimators  A_max_samples  B_max_depth  B_min_samples_split  B_min_samples_leaf  B_n_estimators  B_max_samples
+  AB SoftVoting_Bagging_DT_AB valid        0.5 multiview_soft_voting             A+B 0.227247 0.789625  0.965498   0.910714 0.015426 0.030339                    56       94487                 0.000593           10                   20                   5             100            1.0           10                   20                   5             100            1.0
+  AB SoftVoting_Bagging_DT_AB  test        0.5 multiview_soft_voting             A+B 0.227216 0.789704  0.965506   0.893333 0.016211 0.031844                    75      118108                 0.000635           10                   20                   5             100            1.0           10                   20                   5             100            1.0
+
+%runfile C:/Users/FarhanAli/Desktop/FYP_MSc/project/src/11_it_multiview_bagging.py --wdir
+=== Step 11: I+T Multiview Bagging (Soft Voting) ===
+
+[1/7] Loading I-view and T-view data...
+X_train_I: (377945, 5)
+X_valid_I: (94487, 5)
+X_test_I : (118108, 5)
+X_train_T: (377945, 3)
+X_valid_T: (94487, 3)
+X_test_T : (118108, 3)
+y_train  : (377945,)
+y_valid  : (94487,)
+y_test   : (118108,)
+
+[2/7] Loading tuned best parameters from individual I and T experiments...
+Best I params:
+{'view_name': 'I', 'model_name': 'Bagging_DT_I', 'max_depth': 2, 'min_samples_split': 10, 'min_samples_leaf': 4, 'n_estimators': 50, 'max_samples': 0.8, 'bootstrap': True, 'random_state': 42}
+Best T params:
+{'view_name': 'T', 'model_name': 'Bagging_DT_T', 'max_depth': 8, 'min_samples_split': 10, 'min_samples_leaf': 4, 'n_estimators': 150, 'max_samples': 1.0, 'bootstrap': True, 'random_state': 42}
+
+[3/7] Training tuned I-view model...
+
+[4/7] Training tuned T-view model...
+
+[5/7] Generating component probabilities and soft-voting ensemble...
+
+[6/7] Evaluating I+T multiview ensemble...
+[OK] Final metrics saved to: c:\users\farhanali\desktop\fyp_msc\project\results\11_it_multiview\metrics_IT_multiview.csv
+[OK] Component summary saved to: c:\users\farhanali\desktop\fyp_msc\project\results\11_it_multiview\component_summary_IT.json
+
+[7/7] Saving predictions, plots, and run config...
+[OK] VALID predictions saved to: c:\users\farhanali\desktop\fyp_msc\project\results\11_it_multiview\valid_predictions_IT.csv
+[OK] TEST predictions saved to: c:\users\farhanali\desktop\fyp_msc\project\results\11_it_multiview\test_predictions_IT.csv
+[OK] VALID PR plot saved to: c:\users\farhanali\desktop\fyp_msc\project\results\11_it_multiview\pr_curve_valid_IT.png
+[OK] TEST PR plot saved to: c:\users\farhanali\desktop\fyp_msc\project\results\11_it_multiview\pr_curve_test_IT.png
+[OK] Metrics bar chart saved to: c:\users\farhanali\desktop\fyp_msc\project\results\11_it_multiview\metrics_bar_chart_IT.png
+[OK] VALID confusion matrix saved to: c:\users\farhanali\desktop\fyp_msc\project\results\11_it_multiview\confusion_matrix_valid_IT.png
+[OK] TEST confusion matrix saved to: c:\users\farhanali\desktop\fyp_msc\project\results\11_it_multiview\confusion_matrix_test_IT.png
+[OK] Run config saved to: c:\users\farhanali\desktop\fyp_msc\project\results\11_it_multiview\run_config_IT.json
+
+Component summary:
+{
+  "valid_summary": {
+    "I_valid_pr_auc": 0.03498894027749849,
+    "T_valid_pr_auc": 0.062399430606013565,
+    "IT_valid_pr_auc": 0.062399430606013565,
+    "I_valid_roc_auc": 0.5,
+    "T_valid_roc_auc": 0.6068442687799799,
+    "IT_valid_roc_auc": 0.6068442687799799
+  },
+  "test_summary": {
+    "I_test_pr_auc": 0.0349933958749619,
+    "T_test_pr_auc": 0.06586460114238071,
+    "IT_test_pr_auc": 0.06586460114238071,
+    "I_test_roc_auc": 0.5,
+    "T_test_roc_auc": 0.6132483676263897,
+    "IT_test_roc_auc": 0.6132483676263897
+  }
+}
+
+Final metrics:
+view                    model split  threshold      combination_type component_views   pr_auc  roc_auc  accuracy  precision  recall  f1  positive_predictions  total_rows  positive_rate_predicted  I_max_depth  I_min_samples_split  I_min_samples_leaf  I_n_estimators  I_max_samples  T_max_depth  T_min_samples_split  T_min_samples_leaf  T_n_estimators  T_max_samples
+  IT SoftVoting_Bagging_DT_IT valid        0.5 multiview_soft_voting             I+T 0.062399 0.606844  0.965011        0.0     0.0 0.0                     0       94487                      0.0            2                   10                   4              50            0.8            8                   10                   4             150            1.0
+  IT SoftVoting_Bagging_DT_IT  test        0.5 multiview_soft_voting             I+T 0.065865 0.613248  0.965007        0.0     0.0 0.0                     0      118108                      0.0            2                   10                   4              50            0.8            8                   10                   4             150            1.0
+
+%runfile C:/Users/FarhanAli/Desktop/FYP_MSc/project/src/12_tbi_multiview_bagging.py --wdir
+=== Step 12: T+B+I Multiview Bagging (Soft Voting) ===
+
+[1/7] Loading T-view, B-view, and I-view data...
+X_train_T: (377945, 3)
+X_valid_T: (94487, 3)
+X_test_T : (118108, 3)
+X_train_B: (377945, 33)
+X_valid_B: (94487, 33)
+X_test_B : (118108, 33)
+X_train_I: (377945, 5)
+X_valid_I: (94487, 5)
+X_test_I : (118108, 5)
+y_train  : (377945,)
+y_valid  : (94487,)
+y_test   : (118108,)
+
+[2/7] Loading tuned best parameters from individual T, B, and I experiments...
+Best T params:
+{'view_name': 'T', 'model_name': 'Bagging_DT_T', 'max_depth': 8, 'min_samples_split': 10, 'min_samples_leaf': 4, 'n_estimators': 150, 'max_samples': 1.0, 'bootstrap': True, 'random_state': 42}
+Best B params:
+{'view_name': 'B', 'model_name': 'Bagging_DT_B', 'max_depth': 10, 'min_samples_split': 20, 'min_samples_leaf': 5, 'n_estimators': 100, 'max_samples': 1.0, 'bootstrap': True, 'random_state': 42}
+Best I params:
+{'view_name': 'I', 'model_name': 'Bagging_DT_I', 'max_depth': 2, 'min_samples_split': 10, 'min_samples_leaf': 4, 'n_estimators': 50, 'max_samples': 0.8, 'bootstrap': True, 'random_state': 42}
+
+[3/7] Training tuned T-view model...
+
+[4/7] Training tuned B-view model...
+
+[5/7] Training tuned I-view model...
+
+[6/7] Generating component probabilities and soft-voting ensemble...
+
+[7/7] Evaluating T+B+I multiview ensemble...
+[OK] Final metrics saved to: c:\users\farhanali\desktop\fyp_msc\project\results\12_tbi_multiview\metrics_TBI_multiview.csv
+[OK] Component summary saved to: c:\users\farhanali\desktop\fyp_msc\project\results\12_tbi_multiview\component_summary_TBI.json
+[OK] VALID predictions saved to: c:\users\farhanali\desktop\fyp_msc\project\results\12_tbi_multiview\valid_predictions_TBI.csv
+[OK] TEST predictions saved to: c:\users\farhanali\desktop\fyp_msc\project\results\12_tbi_multiview\test_predictions_TBI.csv
+[OK] VALID PR plot saved to: c:\users\farhanali\desktop\fyp_msc\project\results\12_tbi_multiview\pr_curve_valid_TBI.png
+[OK] TEST PR plot saved to: c:\users\farhanali\desktop\fyp_msc\project\results\12_tbi_multiview\pr_curve_test_TBI.png
+[OK] Metrics bar chart saved to: c:\users\farhanali\desktop\fyp_msc\project\results\12_tbi_multiview\metrics_bar_chart_TBI.png
+[OK] VALID confusion matrix saved to: c:\users\farhanali\desktop\fyp_msc\project\results\12_tbi_multiview\confusion_matrix_valid_TBI.png
+[OK] TEST confusion matrix saved to: c:\users\farhanali\desktop\fyp_msc\project\results\12_tbi_multiview\confusion_matrix_test_TBI.png
+[OK] Run config saved to: c:\users\farhanali\desktop\fyp_msc\project\results\12_tbi_multiview\run_config_TBI.json
+
+Component summary:
+{
+  "valid_summary": {
+    "T_valid_pr_auc": 0.062399430606013565,
+    "B_valid_pr_auc": 0.2121563410529854,
+    "I_valid_pr_auc": 0.03498894027749849,
+    "TBI_valid_pr_auc": 0.22368459852522618,
+    "T_valid_roc_auc": 0.6068442687799799,
+    "B_valid_roc_auc": 0.7785947106674596,
+    "I_valid_roc_auc": 0.5,
+    "TBI_valid_roc_auc": 0.7771884761522809
+  },
+  "test_summary": {
+    "T_test_pr_auc": 0.06586460114238071,
+    "B_test_pr_auc": 0.21086320448617354,
+    "I_test_pr_auc": 0.0349933958749619,
+    "TBI_test_pr_auc": 0.224412748647858,
+    "T_test_roc_auc": 0.6132483676263897,
+    "B_test_roc_auc": 0.7763486279071286,
+    "I_test_roc_auc": 0.5,
+    "TBI_test_roc_auc": 0.7791499763803309
+  }
+}
+
+Final metrics:
+view                     model split  threshold      combination_type component_views   pr_auc  roc_auc  accuracy  precision  recall  f1  positive_predictions  total_rows  positive_rate_predicted  T_max_depth  T_min_samples_split  T_min_samples_leaf  T_n_estimators  T_max_samples  B_max_depth  B_min_samples_split  B_min_samples_leaf  B_n_estimators  B_max_samples  I_max_depth  I_min_samples_split  I_min_samples_leaf  I_n_estimators  I_max_samples
+ TBI SoftVoting_Bagging_DT_TBI valid        0.5 multiview_soft_voting           T+B+I 0.223685 0.777188  0.965011        0.0     0.0 0.0                     0       94487                      0.0            8                   10                   4             150            1.0           10                   20                   5             100            1.0            2                   10                   4              50            0.8
+ TBI SoftVoting_Bagging_DT_TBI  test        0.5 multiview_soft_voting           T+B+I 0.224413 0.779150  0.965007        0.0     0.0 0.0                     0      118108                      0.0            8                   10                   4             150            1.0           10                   20                   5             100            1.0            2                   10                   4              50            0.8
+
+%runfile C:/Users/FarhanAli/Desktop/FYP_MSc/project/src/13_abi_multiview_bagging.py --wdir
+=== Step 13: A+B+I Multiview Bagging (Soft Voting) ===
+
+[1/7] Loading A-view, B-view, and I-view data...
+X_train_A: (377945, 28)
+X_valid_A: (94487, 28)
+X_test_A : (118108, 28)
+X_train_B: (377945, 33)
+X_valid_B: (94487, 33)
+X_test_B : (118108, 33)
+X_train_I: (377945, 5)
+X_valid_I: (94487, 5)
+X_test_I : (118108, 5)
+y_train  : (377945,)
+y_valid  : (94487,)
+y_test   : (118108,)
+
+[2/7] Loading tuned best parameters from individual A, B, and I experiments...
+Best A params:
+{'view_name': 'A', 'model_name': 'Bagging_DT_A', 'max_depth': 10, 'min_samples_split': 20, 'min_samples_leaf': 5, 'n_estimators': 100, 'max_samples': 1.0, 'bootstrap': True, 'random_state': 42}
+Best B params:
+{'view_name': 'B', 'model_name': 'Bagging_DT_B', 'max_depth': 10, 'min_samples_split': 20, 'min_samples_leaf': 5, 'n_estimators': 100, 'max_samples': 1.0, 'bootstrap': True, 'random_state': 42}
+Best I params:
+{'view_name': 'I', 'model_name': 'Bagging_DT_I', 'max_depth': 2, 'min_samples_split': 10, 'min_samples_leaf': 4, 'n_estimators': 50, 'max_samples': 0.8, 'bootstrap': True, 'random_state': 42}
+
+[3/7] Training tuned A-view model...
+
+[4/7] Training tuned B-view model...
+
+[5/7] Training tuned I-view model...
+
+[6/7] Generating component probabilities and soft-voting ensemble...
+
+[7/7] Evaluating A+B+I multiview ensemble...
+[OK] Final metrics saved to: c:\users\farhanali\desktop\fyp_msc\project\results\13_abi_multiview\metrics_ABI_multiview.csv
+[OK] Component summary saved to: c:\users\farhanali\desktop\fyp_msc\project\results\13_abi_multiview\component_summary_ABI.json
+[OK] VALID predictions saved to: c:\users\farhanali\desktop\fyp_msc\project\results\13_abi_multiview\valid_predictions_ABI.csv
+[OK] TEST predictions saved to: c:\users\farhanali\desktop\fyp_msc\project\results\13_abi_multiview\test_predictions_ABI.csv
+[OK] VALID PR plot saved to: c:\users\farhanali\desktop\fyp_msc\project\results\13_abi_multiview\pr_curve_valid_ABI.png
+[OK] TEST PR plot saved to: c:\users\farhanali\desktop\fyp_msc\project\results\13_abi_multiview\pr_curve_test_ABI.png
+[OK] Metrics bar chart saved to: c:\users\farhanali\desktop\fyp_msc\project\results\13_abi_multiview\metrics_bar_chart_ABI.png
+[OK] VALID confusion matrix saved to: c:\users\farhanali\desktop\fyp_msc\project\results\13_abi_multiview\confusion_matrix_valid_ABI.png
+[OK] TEST confusion matrix saved to: c:\users\farhanali\desktop\fyp_msc\project\results\13_abi_multiview\confusion_matrix_test_ABI.png
+[OK] Run config saved to: c:\users\farhanali\desktop\fyp_msc\project\results\13_abi_multiview\run_config_ABI.json
+
+Component summary:
+{
+  "valid_summary": {
+    "A_valid_pr_auc": 0.1882207081316351,
+    "B_valid_pr_auc": 0.2121563410529854,
+    "I_valid_pr_auc": 0.03498894027749849,
+    "ABI_valid_pr_auc": 0.2272471369131823,
+    "A_valid_roc_auc": 0.7599995260817364,
+    "B_valid_roc_auc": 0.7785947106674596,
+    "I_valid_roc_auc": 0.5,
+    "ABI_valid_roc_auc": 0.7896248032962206
+  },
+  "test_summary": {
+    "A_test_pr_auc": 0.18875116593252414,
+    "B_test_pr_auc": 0.21086320448617354,
+    "I_test_pr_auc": 0.0349933958749619,
+    "ABI_test_pr_auc": 0.2272161830581054,
+    "A_test_roc_auc": 0.762129296313246,
+    "B_test_roc_auc": 0.7763486279071286,
+    "I_test_roc_auc": 0.5,
+    "ABI_test_roc_auc": 0.7897043876752721
+  }
+}
+
+Final metrics:
+view                     model split  threshold      combination_type component_views   pr_auc  roc_auc  accuracy  precision   recall       f1  positive_predictions  total_rows  positive_rate_predicted  A_max_depth  A_min_samples_split  A_min_samples_leaf  A_n_estimators  A_max_samples  B_max_depth  B_min_samples_split  B_min_samples_leaf  B_n_estimators  B_max_samples  I_max_depth  I_min_samples_split  I_min_samples_leaf  I_n_estimators  I_max_samples
+ ABI SoftVoting_Bagging_DT_ABI valid        0.5 multiview_soft_voting           A+B+I 0.227247 0.789625  0.965191        1.0 0.005142 0.010232                    17       94487                 0.000180           10                   20                   5             100            1.0           10                   20                   5             100            1.0            2                   10                   4              50            0.8
+ ABI SoftVoting_Bagging_DT_ABI  test        0.5 multiview_soft_voting           A+B+I 0.227216 0.789704  0.965235        1.0 0.006533 0.012981                    27      118108                 0.000229           10                   20                   5             100            1.0           10                   20                   5             100            1.0            2                   10                   4              50            0.8

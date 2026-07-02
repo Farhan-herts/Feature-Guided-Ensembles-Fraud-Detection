@@ -1,0 +1,42 @@
+{
+  "best_valid_delta_pr_auc": {
+    "display_name": "A+B",
+    "experiment_key": "AB",
+    "component_views": "A+B",
+    "delta_pr_auc": 0.0,
+    "delta_f1": 0.16251805897849922,
+    "delta_recall": 0.1070780399274047,
+    "delta_precision": -0.4576941514860977,
+    "delta_fpr": NaN
+  },
+  "best_test_delta_pr_auc": {
+    "display_name": "A+B",
+    "experiment_key": "AB",
+    "component_views": "A+B",
+    "delta_pr_auc": 0.0,
+    "delta_f1": 0.16053684591707398,
+    "delta_recall": 0.1059762884103557,
+    "delta_precision": -0.44122948373619814,
+    "delta_fpr": NaN
+  },
+  "largest_valid_f1_gain": {
+    "display_name": "A+B",
+    "experiment_key": "AB",
+    "component_views": "A+B",
+    "delta_pr_auc": 0.0,
+    "delta_f1": 0.16251805897849922,
+    "delta_recall": 0.1070780399274047,
+    "delta_precision": -0.4576941514860977,
+    "delta_fpr": NaN
+  },
+  "largest_test_f1_gain": {
+    "display_name": "A+B",
+    "experiment_key": "AB",
+    "component_views": "A+B",
+    "delta_pr_auc": 0.0,
+    "delta_f1": 0.16053684591707398,
+    "delta_recall": 0.1059762884103557,
+    "delta_precision": -0.44122948373619814,
+    "delta_fpr": NaN
+  }
+}

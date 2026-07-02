@@ -1,0 +1,28 @@
+{
+  "view_name": "IT",
+  "model_name": "SoftVoting_Bagging_DT_IT",
+  "ensemble_method": "simple_mean_probability",
+  "threshold": 0.5,
+  "I_params": {
+    "view_name": "I",
+    "model_name": "Bagging_DT_I",
+    "max_depth": 2,
+    "min_samples_split": 10,
+    "min_samples_leaf": 4,
+    "n_estimators": 50,
+    "max_samples": 0.8,
+    "bootstrap": true,
+    "random_state": 42
+  },
+  "T_params": {
+    "view_name": "T",
+    "model_name": "Bagging_DT_T",
+    "max_depth": 8,
+    "min_samples_split": 10,
+    "min_samples_leaf": 4,
+    "n_estimators": 150,
+    "max_samples": 1.0,
+    "bootstrap": true,
+    "random_state": 42
+  }
+}

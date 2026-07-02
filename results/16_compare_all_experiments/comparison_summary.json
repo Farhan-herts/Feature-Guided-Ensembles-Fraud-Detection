@@ -1,0 +1,25 @@
+{
+  "top_valid_by_pr_auc": {
+    "display_name": "A+T+B",
+    "experiment_key": "ATB",
+    "component_views": "A+T+B",
+    "pr_auc": 0.236370156116941,
+    "roc_auc": 0.7922332778159616,
+    "f1": 0.0102317183268131,
+    "recall": 0.0051421657592256,
+    "precision": 1.0,
+    "accuracy": 0.965190978653148
+  },
+  "top_test_by_pr_auc": {
+    "display_name": "A+T+B",
+    "experiment_key": "ATB",
+    "component_views": "A+T+B",
+    "pr_auc": 0.237263000983724,
+    "roc_auc": 0.7951134081120574,
+    "f1": 0.0125030055301755,
+    "recall": 0.0062908299056375,
+    "precision": 1.0,
+    "accuracy": 0.9652267416263082
+  },
+  "num_experiments_loaded": 10
+}

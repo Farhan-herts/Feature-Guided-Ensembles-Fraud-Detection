@@ -1,0 +1,22 @@
+{
+  "valid_summary": {
+    "A_valid_pr_auc": 0.1882207081316351,
+    "B_valid_pr_auc": 0.2121563410529854,
+    "I_valid_pr_auc": 0.03498894027749849,
+    "ABI_valid_pr_auc": 0.2272471369131823,
+    "A_valid_roc_auc": 0.7599995260817364,
+    "B_valid_roc_auc": 0.7785947106674596,
+    "I_valid_roc_auc": 0.5,
+    "ABI_valid_roc_auc": 0.7896248032962206
+  },
+  "test_summary": {
+    "A_test_pr_auc": 0.18875116593252414,
+    "B_test_pr_auc": 0.21086320448617354,
+    "I_test_pr_auc": 0.0349933958749619,
+    "ABI_test_pr_auc": 0.2272161830581054,
+    "A_test_roc_auc": 0.762129296313246,
+    "B_test_roc_auc": 0.7763486279071286,
+    "I_test_roc_auc": 0.5,
+    "ABI_test_roc_auc": 0.7897043876752721
+  }
+}

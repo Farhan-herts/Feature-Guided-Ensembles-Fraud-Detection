@@ -1,0 +1,23 @@
+{
+  "selected_best_method_from_step18": "baseline",
+  "valid_summary": {
+    "A_valid_pr_auc": 0.1882207081316351,
+    "A_valid_roc_auc": 0.7599995260817364,
+    "T_valid_pr_auc": 0.062399430606013565,
+    "T_valid_roc_auc": 0.6068442687799799,
+    "B_valid_pr_auc": 0.2121563410529854,
+    "B_valid_roc_auc": 0.7785947106674596,
+    "ATB_valid_pr_auc": 0.23637015611694107,
+    "ATB_valid_roc_auc": 0.7922332778159616
+  },
+  "test_summary": {
+    "A_test_pr_auc": 0.18875116593252414,
+    "A_test_roc_auc": 0.762129296313246,
+    "T_test_pr_auc": 0.06586460114238071,
+    "T_test_roc_auc": 0.6132483676263897,
+    "B_test_pr_auc": 0.21086320448617354,
+    "B_test_roc_auc": 0.7763486279071286,
+    "ATB_test_pr_auc": 0.237263000983724,
+    "ATB_test_roc_auc": 0.7951134081120574
+  }
+}

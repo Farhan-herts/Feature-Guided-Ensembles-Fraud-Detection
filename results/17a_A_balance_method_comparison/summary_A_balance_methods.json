@@ -1,0 +1,88 @@
+{
+  "selection_priority": [
+    "pr_auc",
+    "recall",
+    "f1",
+    "fpr_low",
+    "precision",
+    "roc_auc",
+    "accuracy"
+  ],
+  "top_valid_method": {
+    "method": "baseline",
+    "pr_auc": 0.1882207081316351,
+    "roc_auc": 0.7599995260817364,
+    "accuracy": 0.9613703472435361,
+    "precision": 0.3564273789649416,
+    "recall": 0.12915910465819722,
+    "f1": 0.18960923623445827,
+    "fp": 771,
+    "fn": 2879,
+    "tp": 427,
+    "tn": 90410,
+    "fpr": 0.008455708974457398,
+    "fnr": 0.8708408953418028
+  },
+  "top_test_method": {
+    "method": "baseline",
+    "pr_auc": 0.18875116593252414,
+    "roc_auc": 0.762129296313246,
+    "accuracy": 0.9616283401632404,
+    "precision": 0.36155447605829283,
+    "recall": 0.1260585531091217,
+    "f1": 0.18693936132041622,
+    "fp": 920,
+    "fn": 3612,
+    "tp": 521,
+    "tn": 113055,
+    "fpr": 0.008071945602105725,
+    "fnr": 0.8739414468908783
+  },
+  "train_class_distributions": [
+    {
+      "method": "original_train",
+      "label": "original_train",
+      "count_class_0": 364721,
+      "count_class_1": 13224,
+      "total_rows": 377945,
+      "minority_over_majority": 0.036257851892268336,
+      "fraud_rate": 0.0349892180079112
+    },
+    {
+      "method": "baseline",
+      "label": "baseline_resampled_train",
+      "count_class_0": 364721,
+      "count_class_1": 13224,
+      "total_rows": 377945,
+      "minority_over_majority": 0.036257851892268336,
+      "fraud_rate": 0.0349892180079112
+    },
+    {
+      "method": "sub_sampling",
+      "label": "sub_sampling_resampled_train",
+      "count_class_0": 132240,
+      "count_class_1": 13224,
+      "total_rows": 145464,
+      "minority_over_majority": 0.1,
+      "fraud_rate": 0.09090909090909091
+    },
+    {
+      "method": "smote",
+      "label": "smote_resampled_train",
+      "count_class_0": 364721,
+      "count_class_1": 72944,
+      "total_rows": 437665,
+      "minority_over_majority": 0.19999945163563382,
+      "fraud_rate": 0.16666628585790502
+    },
+    {
+      "method": "sub_sampling_plus_smote",
+      "label": "sub_sampling_plus_smote_resampled_train",
+      "count_class_0": 264480,
+      "count_class_1": 52896,
+      "total_rows": 317376,
+      "minority_over_majority": 0.2,
+      "fraud_rate": 0.16666666666666666
+    }
+  ]
+}

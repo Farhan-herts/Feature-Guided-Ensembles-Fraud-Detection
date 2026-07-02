@@ -1,0 +1,6 @@
+method,label,count_class_0,count_class_1,total_rows,minority_over_majority,fraud_rate
+original_train,original_train,364721,13224,377945,0.036257851892268336,0.0349892180079112
+baseline,baseline_resampled_train,364721,13224,377945,0.036257851892268336,0.0349892180079112
+sub_sampling,sub_sampling_resampled_train,132240,13224,145464,0.1,0.09090909090909091
+smote,smote_resampled_train,364721,72944,437665,0.19999945163563382,0.16666628585790502
+sub_sampling_plus_smote,sub_sampling_plus_smote_resampled_train,264480,52896,317376,0.2,0.16666666666666666

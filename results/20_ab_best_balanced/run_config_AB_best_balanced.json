@@ -1,0 +1,39 @@
+{
+  "view_name": "AB",
+  "base_model": "SoftVoting_Bagging_DT_AB_best_balanced",
+  "threshold": 0.25,
+  "ensemble_method": "simple_mean_probability",
+  "component_views": "A+B",
+  "selected_best_method_from_step18": "baseline",
+  "best_params_from_prior_tuned_run": {
+    "A_params": {
+      "view_name": "A",
+      "model_name": "Bagging_DT_A",
+      "max_depth": 10,
+      "min_samples_split": 20,
+      "min_samples_leaf": 5,
+      "n_estimators": 100,
+      "max_samples": 1.0,
+      "bootstrap": true,
+      "random_state": 42
+    },
+    "B_params": {
+      "view_name": "B",
+      "model_name": "Bagging_DT_B",
+      "max_depth": 10,
+      "min_samples_split": 20,
+      "min_samples_leaf": 5,
+      "n_estimators": 100,
+      "max_samples": 1.0,
+      "bootstrap": true,
+      "random_state": 42
+    }
+  },
+  "balancing_settings": {
+    "sub_sampling_strategy": 0.1,
+    "smote_sampling_strategy": 0.2,
+    "combined_under_strategy": 0.05,
+    "combined_smote_strategy": 0.2,
+    "smote_k_neighbors": 3
+  }
+}

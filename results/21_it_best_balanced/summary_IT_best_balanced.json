@@ -1,0 +1,62 @@
+{
+  "selected_best_method_from_step18": "baseline",
+  "view_name": "IT",
+  "component_views": "I+T",
+  "valid_metrics": {
+    "pr_auc": 0.062399430606013565,
+    "roc_auc": 0.6068442687799799,
+    "accuracy": 0.9650110597225016,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "fp": 0,
+    "fn": 3306,
+    "tp": 0,
+    "tn": 91181,
+    "fpr": 0.0,
+    "fnr": 1.0
+  },
+  "test_metrics": {
+    "pr_auc": 0.06586460114238071,
+    "roc_auc": 0.6132483676263897,
+    "accuracy": 0.9650066041250381,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "fp": 0,
+    "fn": 4133,
+    "tp": 0,
+    "tn": 113975,
+    "fpr": 0.0,
+    "fnr": 1.0
+  },
+  "resampled_train_distributions": [
+    {
+      "method": "original_train",
+      "label": "original_train",
+      "count_class_0": 364721,
+      "count_class_1": 13224,
+      "total_rows": 377945,
+      "minority_over_majority": 0.036257851892268336,
+      "fraud_rate": 0.0349892180079112
+    },
+    {
+      "method": "baseline_I",
+      "label": "baseline_resampled_train_I",
+      "count_class_0": 364721,
+      "count_class_1": 13224,
+      "total_rows": 377945,
+      "minority_over_majority": 0.036257851892268336,
+      "fraud_rate": 0.0349892180079112
+    },
+    {
+      "method": "baseline_T",
+      "label": "baseline_resampled_train_T",
+      "count_class_0": 364721,
+      "count_class_1": 13224,
+      "total_rows": 377945,
+      "minority_over_majority": 0.036257851892268336,
+      "fraud_rate": 0.0349892180079112
+    }
+  ]
+}

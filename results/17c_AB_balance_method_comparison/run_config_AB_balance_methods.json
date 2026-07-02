@@ -1,0 +1,54 @@
+{
+  "view_name": "AB",
+  "base_model": "SoftVoting_Bagging_DT_AB",
+  "threshold": 0.25,
+  "ensemble_method": "simple_mean_probability",
+  "best_params_from_prior_tuned_run": {
+    "A_params": {
+      "view_name": "A",
+      "model_name": "Bagging_DT_A",
+      "max_depth": 10,
+      "min_samples_split": 20,
+      "min_samples_leaf": 5,
+      "n_estimators": 100,
+      "max_samples": 1.0,
+      "bootstrap": true,
+      "random_state": 42
+    },
+    "B_params": {
+      "view_name": "B",
+      "model_name": "Bagging_DT_B",
+      "max_depth": 10,
+      "min_samples_split": 20,
+      "min_samples_leaf": 5,
+      "n_estimators": 100,
+      "max_samples": 1.0,
+      "bootstrap": true,
+      "random_state": 42
+    }
+  },
+  "balancing_methods": {
+    "baseline": {},
+    "sub_sampling": {
+      "sampler": "RandomUnderSampler",
+      "sampling_strategy": 0.1
+    },
+    "smote": {
+      "sampler": "SMOTE",
+      "sampling_strategy": 0.2,
+      "k_neighbors": 3
+    },
+    "sub_sampling_plus_smote": {
+      "step_1": {
+        "sampler": "RandomUnderSampler",
+        "sampling_strategy": 0.05
+      },
+      "step_2": {
+        "sampler": "SMOTE",
+        "sampling_strategy": 0.2,
+        "k_neighbors": 3
+      }
+    }
+  },
+  "note": "Balancing is applied independently within each training view."
+}

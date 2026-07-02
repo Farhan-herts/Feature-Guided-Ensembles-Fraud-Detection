@@ -1,0 +1,4 @@
+method,label,count_class_0,count_class_1,total_rows,minority_over_majority,fraud_rate
+original_train,original_train,364721,13224,377945,0.036257851892268336,0.0349892180079112
+baseline_I,baseline_resampled_train_I,364721,13224,377945,0.036257851892268336,0.0349892180079112
+baseline_T,baseline_resampled_train_T,364721,13224,377945,0.036257851892268336,0.0349892180079112

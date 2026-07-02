@@ -1,0 +1,51 @@
+{
+  "selected_best_method_from_step18": "baseline",
+  "valid_metrics": {
+    "pr_auc": 0.03498894027749849,
+    "roc_auc": 0.5,
+    "accuracy": 0.9650110597225016,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "fp": 0,
+    "fn": 3306,
+    "tp": 0,
+    "tn": 91181,
+    "fpr": 0.0,
+    "fnr": 1.0
+  },
+  "test_metrics": {
+    "pr_auc": 0.0349933958749619,
+    "roc_auc": 0.5,
+    "accuracy": 0.9650066041250381,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "fp": 0,
+    "fn": 4133,
+    "tp": 0,
+    "tn": 113975,
+    "fpr": 0.0,
+    "fnr": 1.0
+  },
+  "train_class_distribution": [
+    {
+      "method": "original_train",
+      "label": "original_train",
+      "count_class_0": 364721,
+      "count_class_1": 13224,
+      "total_rows": 377945,
+      "minority_over_majority": 0.036257851892268336,
+      "fraud_rate": 0.0349892180079112
+    },
+    {
+      "method": "baseline",
+      "label": "baseline_resampled_train",
+      "count_class_0": 364721,
+      "count_class_1": 13224,
+      "total_rows": 377945,
+      "minority_over_majority": 0.036257851892268336,
+      "fraud_rate": 0.0349892180079112
+    }
+  ]
+}

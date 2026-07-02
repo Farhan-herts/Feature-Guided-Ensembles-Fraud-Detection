@@ -1,0 +1,13 @@
+feature_group,missing_pct
+Identity,84.82327058374761
+Distance,76.64036305754055
+Delay / Time-related,60.490010140270414
+Matching / Behaviour,49.923328177976465
+Email,46.37323466657635
+Anonymised Engineered,43.03846896590721
+Address,11.12642666034477
+Card,0.5053284564409976
+Aggregation / Counts,0.0
+Core Transaction,0.0
+Target / ID,0.0
+Temporal,0.0

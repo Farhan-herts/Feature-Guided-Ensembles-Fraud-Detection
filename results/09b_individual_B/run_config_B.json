@@ -1,0 +1,11 @@
+{
+  "view_name": "B",
+  "model_name": "Bagging_DT_B",
+  "max_depth": 6,
+  "min_samples_split": 5,
+  "min_samples_leaf": 2,
+  "n_estimators": 100,
+  "max_samples": 0.8,
+  "bootstrap": true,
+  "random_state": 42
+}

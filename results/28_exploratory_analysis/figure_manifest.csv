@@ -1,0 +1,7 @@
+figure_id,filename,suggested_caption
+Figure B1,class_distribution.png,Class distribution of fraud and non-fraud transactions in the IEEE-CIS training data.
+Figure B2,identity_coverage.png,Coverage of identity-linked information after merging transaction and identity tables.
+Figure B3,missingness_by_feature_group.png,Average missingness across major feature groups in the merged dataset.
+Figure B4,top_missing_features.png,Top features with the highest proportion of missing values in the merged dataset.
+Figure B5,transaction_amount_log_distribution.png,Log-scaled transaction amount distribution for fraud and non-fraud transactions.
+Figure B6,hourly_fraud_rate.png,Hourly fraud-rate pattern derived from TransactionDT in the training data.
